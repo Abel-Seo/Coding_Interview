@@ -10,17 +10,255 @@
 
 ---
 
-## Phase 1: 패턴 수집기 (3~4월)
+## Phase 1 (4~7월): 주 3문제 — 패턴 수집
 
-목표: Easy 유형별 패턴 익히기 + 매일 1문제 습관 정착
+### Stage 1. Arrays & Hashing (9문제) — 4/1 ~ 4/20
 
-### 대상
+| # | LC번호 | 문제 | 상태 |
+|---|--------|------|------|
+| 1 | 217 | Contains Duplicate | |
+| 2 | 242 | Valid Anagram | |
+| 3 | 1 | Two Sum | |
+| 4 | 49 | Group Anagrams | |
+| 5 | 347 | Top K Frequent Elements | |
+| 6 | 238 | Product of Array Except Self | |
+| 7 | 36 | Valid Sudoku | |
+| 8 | 271 | Encode and Decode Strings | |
+| 9 | 128 | Longest Consecutive Sequence | |
 
-NeetCode 150의 Easy 문제를 유형별로 순서대로 공략한다.
-한 유형을 끝내기 전에 다른 유형으로 넘어가지 않는다.
-(예: Array & Hashing의 Easy를 전부 끝내고 → Two Pointers Easy로 이동)
+### Stage 2. Two Pointers (5문제) — 4/21 ~ 5/4
 
-### 매일 워크플로우
+| # | LC번호 | 문제 | 상태 |
+|---|--------|------|------|
+| 1 | 125 | Valid Palindrome | |
+| 2 | 167 | Two Sum II | |
+| 3 | 15 | 3Sum | |
+| 4 | 11 | Container With Most Water | |
+| 5 | 42 | Trapping Rain Water | |
+
+### Stage 3. Sliding Window (6문제) — 5/5 ~ 5/18
+
+| # | LC번호 | 문제 | 상태 |
+|---|--------|------|------|
+| 1 | 121 | Best Time to Buy and Sell Stock | |
+| 2 | 3 | Longest Substring Without Repeating Characters | |
+| 3 | 424 | Longest Repeating Character Replacement | |
+| 4 | 567 | Permutation in String | |
+| 5 | 76 | Minimum Window Substring | |
+| 6 | 239 | Sliding Window Maximum | |
+
+### Stage 4. Stack (7문제) — 5/19 ~ 6/8
+
+| # | LC번호 | 문제 | 상태 |
+|---|--------|------|------|
+| 1 | 20 | Valid Parentheses | |
+| 2 | 155 | Min Stack | |
+| 3 | 150 | Evaluate Reverse Polish Notation | |
+| 4 | 22 | Generate Parentheses | |
+| 5 | 739 | Daily Temperatures | |
+| 6 | 853 | Car Fleet | |
+| 7 | 84 | Largest Rectangle in Histogram | |
+
+### Stage 5. Binary Search (7문제) — 6/9 ~ 6/29
+
+| # | LC번호 | 문제 | 상태 |
+|---|--------|------|------|
+| 1 | 704 | Binary Search | |
+| 2 | 74 | Search a 2D Matrix | |
+| 3 | 875 | Koko Eating Bananas | |
+| 4 | 33 | Search in Rotated Sorted Array | |
+| 5 | 153 | Find Minimum in Rotated Sorted Array | |
+| 6 | 981 | Time Based Key-Value Store | |
+| 7 | 4 | Median of Two Sorted Arrays | |
+
+### Stage 6. Linked List (11문제) — 6/30 ~ 7/26
+
+| # | LC번호 | 문제 | 상태 |
+|---|--------|------|------|
+| 1 | 206 | Reverse Linked List | |
+| 2 | 21 | Merge Two Sorted Lists | |
+| 3 | 143 | Reorder List | |
+| 4 | 19 | Remove Nth Node From End of List | |
+| 5 | 138 | Copy List with Random Pointer | |
+| 6 | 2 | Add Two Numbers | |
+| 7 | 141 | Linked List Cycle | |
+| 8 | 287 | Find the Duplicate Number | |
+| 9 | 146 | LRU Cache | |
+| 10 | 23 | Merge k Sorted Lists | |
+| 11 | 25 | Reverse Nodes in k-Group | |
+
+---
+
+## Phase 2 (8월~): 주 5문제로 가속
+
+### Stage 7. Trees (15문제) — 7/27 ~ 8/16
+
+| # | LC번호 | 문제 | 상태 |
+|---|--------|------|------|
+| 1 | 226 | Invert Binary Tree | |
+| 2 | 104 | Maximum Depth of Binary Tree | |
+| 3 | 543 | Diameter of Binary Tree | |
+| 4 | 110 | Balanced Binary Tree | |
+| 5 | 100 | Same Tree | |
+| 6 | 572 | Subtree of Another Tree | |
+| 7 | 235 | Lowest Common Ancestor of a BST | |
+| 8 | 102 | Binary Tree Level Order Traversal | |
+| 9 | 199 | Binary Tree Right Side View | |
+| 10 | 1448 | Count Good Nodes in Binary Tree | |
+| 11 | 98 | Validate Binary Search Tree | |
+| 12 | 230 | Kth Smallest Element in a BST | |
+| 13 | 105 | Construct Binary Tree from Preorder and Inorder Traversal | |
+| 14 | 124 | Binary Tree Maximum Path Sum | |
+| 15 | 297 | Serialize and Deserialize Binary Tree | |
+
+### Stage 8. Tries (3문제) — 8/17 ~ 8/23
+
+| # | LC번호 | 문제 | 상태 |
+|---|--------|------|------|
+| 1 | 208 | Implement Trie (Prefix Tree) | |
+| 2 | 211 | Design Add and Search Words Data Structure | |
+| 3 | 212 | Word Search II | |
+
+### Stage 9. Heap / Priority Queue (7문제) — 8/24 ~ 9/6
+
+| # | LC번호 | 문제 | 상태 |
+|---|--------|------|------|
+| 1 | 703 | Kth Largest Element in a Stream | |
+| 2 | 1046 | Last Stone Weight | |
+| 3 | 973 | K Closest Points to Origin | |
+| 4 | 215 | Kth Largest Element in an Array | |
+| 5 | 621 | Task Scheduler | |
+| 6 | 355 | Design Twitter | |
+| 7 | 295 | Find Median from Data Stream | |
+
+### Stage 10. Backtracking (9문제) — 9/7 ~ 9/20
+
+| # | LC번호 | 문제 | 상태 |
+|---|--------|------|------|
+| 1 | 78 | Subsets | |
+| 2 | 39 | Combination Sum | |
+| 3 | 46 | Permutations | |
+| 4 | 90 | Subsets II | |
+| 5 | 40 | Combination Sum II | |
+| 6 | 79 | Word Search | |
+| 7 | 131 | Palindrome Partitioning | |
+| 8 | 17 | Letter Combinations of a Phone Number | |
+| 9 | 51 | N-Queens | |
+
+### Stage 11. Graphs (13문제) — 9/21 ~ 10/11
+
+| # | LC번호 | 문제 | 상태 |
+|---|--------|------|------|
+| 1 | 200 | Number of Islands | |
+| 2 | 133 | Clone Graph | |
+| 3 | 695 | Max Area of Island | |
+| 4 | 417 | Pacific Atlantic Water Flow | |
+| 5 | 130 | Surrounded Regions | |
+| 6 | 994 | Rotting Oranges | |
+| 7 | 286 | Walls and Gates | |
+| 8 | 207 | Course Schedule | |
+| 9 | 210 | Course Schedule II | |
+| 10 | 684 | Redundant Connection | |
+| 11 | 323 | Number of Connected Components in an Undirected Graph | |
+| 12 | 261 | Graph Valid Tree | |
+| 13 | 127 | Word Ladder | |
+
+### Stage 12. Advanced Graphs (6문제) — 10/12 ~ 10/22
+
+| # | LC번호 | 문제 | 상태 |
+|---|--------|------|------|
+| 1 | 332 | Reconstruct Itinerary | |
+| 2 | 1584 | Min Cost to Connect All Points | |
+| 3 | 743 | Network Delay Time | |
+| 4 | 778 | Swim in Rising Water | |
+| 5 | 269 | Alien Dictionary | |
+| 6 | 787 | Cheapest Flights Within K Stops | |
+
+### Stage 13. 1-D DP (12문제) — 10/23 ~ 11/9
+
+| # | LC번호 | 문제 | 상태 |
+|---|--------|------|------|
+| 1 | 70 | Climbing Stairs | |
+| 2 | 746 | Min Cost Climbing Stairs | |
+| 3 | 198 | House Robber | |
+| 4 | 213 | House Robber II | |
+| 5 | 5 | Longest Palindromic Substring | |
+| 6 | 647 | Palindromic Substrings | |
+| 7 | 91 | Decode Ways | |
+| 8 | 322 | Coin Change | |
+| 9 | 152 | Maximum Product Subarray | |
+| 10 | 139 | Word Break | |
+| 11 | 300 | Longest Increasing Subsequence | |
+| 12 | 416 | Partition Equal Subset Sum | |
+
+### Stage 14. 2-D DP (11문제) — 11/10 ~ 11/27
+
+| # | LC번호 | 문제 | 상태 |
+|---|--------|------|------|
+| 1 | 62 | Unique Paths | |
+| 2 | 1143 | Longest Common Subsequence | |
+| 3 | 309 | Best Time to Buy and Sell Stock with Cooldown | |
+| 4 | 518 | Coin Change II | |
+| 5 | 494 | Target Sum | |
+| 6 | 97 | Interleaving String | |
+| 7 | 329 | Longest Increasing Path in a Matrix | |
+| 8 | 115 | Distinct Subsequences | |
+| 9 | 72 | Edit Distance | |
+| 10 | 312 | Burst Balloons | |
+| 11 | 10 | Regular Expression Matching | |
+
+### Stage 15. Greedy (8문제) — 11/28 ~ 12/11
+
+| # | LC번호 | 문제 | 상태 |
+|---|--------|------|------|
+| 1 | 53 | Maximum Subarray | |
+| 2 | 55 | Jump Game | |
+| 3 | 45 | Jump Game II | |
+| 4 | 134 | Gas Station | |
+| 5 | 846 | Hand of Straights | |
+| 6 | 1899 | Merge Triplets to Form Target Triplet | |
+| 7 | 763 | Partition Labels | |
+| 8 | 678 | Valid Parenthesis String | |
+
+### Stage 16. Intervals (6문제) — 12/12 ~ 12/22
+
+| # | LC번호 | 문제 | 상태 |
+|---|--------|------|------|
+| 1 | 57 | Insert Interval | |
+| 2 | 56 | Merge Intervals | |
+| 3 | 435 | Non-overlapping Intervals | |
+| 4 | 252 | Meeting Rooms | |
+| 5 | 253 | Meeting Rooms II | |
+| 6 | 1851 | Minimum Interval to Include Each Query | |
+
+### Stage 17. Math & Geometry (8문제) — 12/23 ~ 1/5
+
+| # | LC번호 | 문제 | 상태 |
+|---|--------|------|------|
+| 1 | 48 | Rotate Image | |
+| 2 | 54 | Spiral Matrix | |
+| 3 | 73 | Set Matrix Zeroes | |
+| 4 | 202 | Happy Number | |
+| 5 | 66 | Plus One | |
+| 6 | 50 | Pow(x, n) | |
+| 7 | 43 | Multiply Strings | |
+| 8 | 2013 | Detect Squares | |
+
+### Stage 18. Bit Manipulation (7문제) — 1/6 ~ 1/16
+
+| # | LC번호 | 문제 | 상태 |
+|---|--------|------|------|
+| 1 | 136 | Single Number | |
+| 2 | 191 | Number of 1 Bits | |
+| 3 | 338 | Counting Bits | |
+| 4 | 190 | Reverse Bits | |
+| 5 | 268 | Missing Number | |
+| 6 | 371 | Sum of Two Integers | |
+| 7 | 7 | Reverse Integer | |
+
+---
+
+## 매일 워크플로우
 
 **소요시간: 20~30분 (저녁 루틴)**
 
@@ -49,56 +287,11 @@ NeetCode 150의 Easy 문제를 유형별로 순서대로 공략한다.
 
 ### 안전장치
 
-- **목표**: 매일 1문제
-- **빨간불**: 3일 연속 공백 금지 ⚠️
+- **Phase 1 목표**: 주 3문제
+- **Phase 2 목표**: 주 5문제
+- **빨간불**: 3일 연속 공백 금지
 - 하루 빠지는 건 괜찮다. 이틀 빠지는 것도 봐줄 수 있다. 3일 연속은 안 된다.
 - 완벽주의에 짓눌려 "오늘 못했으니 내일 2개 해야지" 같은 생각은 금지. 내일도 1개면 충분하다.
-
----
-
-## Phase 2: 패턴 심화 (5~6월)
-
-목표: Medium 진입 + 간격반복으로 패턴 정착
-
-### 대상
-
-NeetCode 150의 Medium 문제를 유형별로 공략한다.
-Phase 1과 동일하게 한 유형씩 집중한다.
-
-### 변경점
-
-- **로직 구상 시간을 20분으로 확장한다.** Medium은 Easy보다 사고 단계가 하나 더 필요하다.
-- **구현 시간도 20분으로 확장한다.** 총 40분 이내.
-- 그 외 기록 방식, 안전장치는 Phase 1과 동일하다.
-
----
-
-## Phase 3: 패턴 판별 (7월~)
-
-목표: 유형 태그 없이 문제를 보고 어떤 패턴인지 스스로 판별하는 능력
-
-### 대상
-
-NeetCode 150 범위 밖의 문제, 또는 LeetCode Random Pick을 활용한다.
-유형 태그를 보지 않고 문제만 읽고 접근법을 판단하는 연습을 한다.
-
-### 방법
-
-1. LeetCode의 "Pick Random" 또는 NeetCode Blind 모드로 문제를 뽑는다.
-2. **유형 태그를 보지 않는다.**
-3. 먼저 "이 문제는 어떤 패턴인가?"를 판단하고 적는다.
-4. 풀이를 시도한 뒤, 실제 태그와 비교한다.
-5. 유형 판별이 맞았는지 여부를 기록에 추가한다.
-
-### 기록 추가 항목
-
-```
-| # | 문제 | 내 판단 유형 | 실제 유형 | 판별 | 결과 | 소요시간 |
-|---|------|------------|----------|------|------|----------|
-| 1 | LC0xxx | sliding-window | sliding-window | ✅ | 🟡 | 25min |
-```
-
-유형 판별이 틀렸다면 (❌) → 해당 유형의 패턴 특징을 Problem Note에 다시 정리한다.
 
 ---
 
@@ -127,7 +320,7 @@ NeetCode 150 범위 밖의 문제, 또는 LeetCode Random Pick을 활용한다.
 
 ### 복습 시 핵심
 
-- 백지에서 푼다. solution.ts를 보지 않는다.
+- 백지에서 푼다. solution.py를 보지 않는다.
 - 2주가 지나면 코드 기억은 날아가고 패턴 이해만 남는다.
 - 이때 풀 수 있으면 진짜 이해한 것, 못 풀면 한 번 더 배우는 것. 어느 쪽이든 의미 있다.
 
@@ -138,16 +331,16 @@ NeetCode 150 범위 밖의 문제, 또는 LeetCode Random Pick을 활용한다.
 ### 로컬 풀이 환경 (leetcode-workspace)
 
 ```bash
-# 새 문제
-python scripts/new_problem.py 217 contains-duplicate "array,hash-set"
+# 새 문제 (번호만 입력하면 자동 생성)
+make new 217
 
-# problem.md에 문제 복붙, solution.py에 풀이 작성
+# solution.py에 풀이 작성
 
 # Claude Code로 테스트 자동 생성
 /generate-test problems/LC0217-contains-duplicate
 
 # 테스트 실행
-python -m pytest problems/LC0217-contains-duplicate -v
+make test n=217
 ```
 
 ### Obsidian 기록
@@ -163,6 +356,6 @@ python -m pytest problems/LC0217-contains-duplicate -v
 - ❌ 15분 넘게 혼자 끙끙대기 (타이머 울리면 즉시 답 확인)
 - ❌ Easy 끝나기 전에 Medium으로 점프
 - ❌ 하루 빠졌다고 다음 날 2문제 몰아풀기
-- ❌ 유형별 순서 무시하고 랜덤으로 풀기 (Phase 3 전까지)
+- ❌ 유형별 순서 무시하고 랜덤으로 풀기 (Phase 2까지)
 - ❌ 풀이 환경/도구 세팅에 30분 이상 쓰기 (세팅은 끝났다. 풀어라.)
 - ❌ 완벽한 로드맵을 먼저 짜겠다고 시작을 미루기

@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# Coding_Interview
-=======
 # LeetCode Workspace
 
 NeetCode 150 로컬 풀이 환경 (Python + pytest + Claude Code)
@@ -29,6 +26,28 @@ pip install -r requirements.txt
 
 > 터미널 열 때마다 `source .venv/bin/activate` 한 번 실행해야 한다.
 > 프롬프트에 `(.venv)` 붙어있으면 활성화된 상태.
+
+### 3. (선택) .zshrc 자동 활성화 설정
+
+터미널 열 때마다 수동으로 activate 하기 귀찮으면, `~/.zshrc` 끝에 아래를 추가한다:
+
+```bash
+# Auto activate venv
+auto_activate_venv() {
+  if [[ -f ".venv/bin/activate" ]]; then
+    source .venv/bin/activate
+  fi
+}
+# cd 할 때마다 자동 체크
+chpwd_functions=(${chpwd_functions[@]} auto_activate_venv)
+# 터미널 열 때도 현재 디렉토리 체크
+auto_activate_venv
+```
+
+이렇게 하면:
+- `.venv/` 폴더가 있는 디렉토리에 `cd` 하면 자동으로 가상환경 활성화
+- 해당 디렉토리에서 터미널을 열어도 자동 활성화
+- `.venv/`가 없는 디렉토리로 이동하면 아무 일도 안 함
 
 ## 매일 워크플로우
 
@@ -102,4 +121,3 @@ leetcode-workspace/
 ## 학습 가이드
 
 [STUDY_GUIDE.md](./STUDY_GUIDE.md) 참조
->>>>>>> f47cc10 (Initial Setting)
