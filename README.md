@@ -49,21 +49,39 @@ auto_activate_venv
 - 해당 디렉토리에서 터미널을 열어도 자동 활성화
 - `.venv/`가 없는 디렉토리로 이동하면 아무 일도 안 함
 
+## 명령어 요약
+
+| 명령어 | 설명 |
+|--------|------|
+| `make status` | 오늘 기준 Stage, 남은 문제 확인 |
+| `make new 217` | LeetCode 번호로 문제 자동 생성 |
+| `make test n=217` | 특정 문제 테스트 실행 |
+| `make test` | 전체 테스트 실행 |
+| `/generate-test problems/LC0217-...` | Claude Code 테스트 자동 생성 |
+
 ## 매일 워크플로우
 
-### 1. 새 문제 스캐폴딩
+### 1. 오늘 할 문제 확인
 
 ```bash
-python scripts/new_problem.py 1 two-sum "array,hash-map"
+make status
 ```
 
-생성되는 파일:
-- `problems/LC0001-two-sum/problem.md` ← 문제 복붙
-- `problems/LC0001-two-sum/solution.py` ← 풀이 작성
+오늘 날짜 기준으로 현재 Stage, 남은 기간(D-day), 안 푼 문제 목록을 보여준다.
+이전 Stage에 밀린 문제가 있으면 경고도 표시된다.
 
-### 2. 문제 복붙
+### 2. 새 문제 스캐폴딩
 
-`problem.md`를 열고 LeetCode에서 문제 설명을 복붙한다.
+```bash
+make new 217
+```
+
+LeetCode 번호만 입력하면 API에서 문제 정보를 자동으로 가져와서 파일을 생성한다.
+
+- `problems/LC0217-contains-duplicate/problem.md` ← 문제 설명 (자동 생성)
+- `problems/LC0217-contains-duplicate/solution.py` ← 풀이 작성
+
+태그를 직접 지정하고 싶으면: `make new 217 "array"`
 
 ### 3. 풀이 작성
 
@@ -73,7 +91,7 @@ IDE에서 `problem.md`와 `solution.py`를 스플릿 뷰로 열면 왼쪽 문제
 ### 4. 테스트 자동 생성 (Claude Code)
 
 ```
-/generate-test problems/LC0001-two-sum
+/generate-test problems/LC0217-contains-duplicate
 ```
 
 `problem.md`와 `solution.py`를 읽고 `test_solution.py`를 자동 생성한다.
@@ -82,10 +100,10 @@ IDE에서 `problem.md`와 `solution.py`를 스플릿 뷰로 열면 왼쪽 문제
 
 ```bash
 # 특정 문제만
-python -m pytest problems/LC0001-two-sum -v
+make test n=217
 
 # 전체
-python -m pytest -v
+make test
 ```
 
 ## 폴더 구조
@@ -105,8 +123,10 @@ leetcode-workspace/
 ├── templates/                   ← Obsidian 템플릿
 │   ├── Daily Coding Log.md
 │   └── Problem Note.md
+├── Makefile                     ← make 명령어 (new, test, status)
 ├── scripts/
-│   └── new_problem.py           ← 문제 스캐폴딩
+│   ├── new_problem.py           ← 문제 스캐폴딩 (LeetCode API 자동 연동)
+│   └── status.py                ← 진행 상황 확인
 ├── pytest.ini
 └── requirements.txt
 ```
