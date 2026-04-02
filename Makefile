@@ -1,7 +1,7 @@
 # ── LeetCode Workspace ──────────────────────────────────────
-# make new 217          → 문제 스캐폴딩
+# make new 217          → 문제 스캐폴딩 (problem.md + solution.py + test_solution.py)
 # make new 217 "array"  → 태그 직접 지정
-# make test 217         → 특정 문제 테스트
+# make test n=217       → 특정 문제 테스트
 # make test             → 전체 테스트
 # make status           → 오늘 진행 상황 확인
 

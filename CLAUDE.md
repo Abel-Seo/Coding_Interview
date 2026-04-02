@@ -6,7 +6,7 @@ NeetCode 150 풀이 환경. Python + pytest.
 
 - `problems/LC{번호}-{slug}/problem.md` — 문제 설명
 - `problems/LC{번호}-{slug}/solution.py` — 풀이 코드
-- `problems/LC{번호}-{slug}/test_solution.py` — 테스트 (AI 생성)
+- `problems/LC{번호}-{slug}/test_solution.py` — 테스트 (자동 생성)
 
 ## 규칙
 

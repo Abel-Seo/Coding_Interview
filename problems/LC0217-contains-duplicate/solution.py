@@ -1,3 +1,5 @@
+from typing import List
+
 """
 LC0217 — Contains Duplicate
 https://leetcode.com/problems/contains-duplicate/
@@ -15,11 +17,16 @@ https://leetcode.com/problems/contains-duplicate/
 
 # ── LeetCode 제출용 ─────────────────────────────────────────
 class Solution:
-    def containsDuplicate(self):
-        # TODO: 풀이 작성
+    def containsDuplicate(self, nums: List[int]) -> bool:
+        seen = {}
+        for x in nums:
+            if x in seen:
+                return True
+            seen[x] = seen.get(x, 0) + 1
+        return False
         pass
 
 
 # ── 로컬 테스트용 래퍼 ────────────────────────────────────────
-def contains_duplicate():
-    return Solution().containsDuplicate()
+def contains_duplicate(nums):
+    return Solution().containsDuplicate(nums)
