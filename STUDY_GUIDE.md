@@ -16,8 +16,8 @@
 
 | # | LC번호 | 문제 | 상태 |
 |---|--------|------|------|
-| 1 | 217 | Contains Duplicate | |
-| 2 | 242 | Valid Anagram | |
+| 1 | 217 | Contains Duplicate |🟢|
+| 2 | 242 | Valid Anagram |🟢|
 | 3 | 1 | Two Sum | |
 | 4 | 49 | Group Anagrams | |
 | 5 | 347 | Top K Frequent Elements | |

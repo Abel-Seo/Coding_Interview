@@ -18,11 +18,11 @@ https://leetcode.com/problems/contains-duplicate/
 # ── LeetCode 제출용 ─────────────────────────────────────────
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
-        seen = {}
+        seen = set()
         for x in nums:
             if x in seen:
                 return True
-            seen[x] = seen.get(x, 0) + 1
+            seen.add(x)
         return False
         pass
 
