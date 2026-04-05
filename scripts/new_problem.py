@@ -22,12 +22,13 @@ import re
 import urllib.request
 import html
 import textwrap
+from typing import Optional
 
 
 # ── LeetCode API ───────────────────────────────────────────────
 
 
-def fetch_slug_from_number(num: int) -> dict | None:
+def fetch_slug_from_number(num: int) -> Optional[dict]:
     """LeetCode REST API로 번호 → slug 조회."""
     url = "https://leetcode.com/api/problems/all/"
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
@@ -44,7 +45,7 @@ def fetch_slug_from_number(num: int) -> dict | None:
     return None
 
 
-def fetch_problem_detail(slug: str) -> dict | None:
+def fetch_problem_detail(slug: str) -> Optional[dict]:
     """LeetCode GraphQL API로 문제 상세 정보 조회 (코드 스니펫 포함)."""
     query = json.dumps({
         "query": """query {
@@ -124,7 +125,7 @@ def extract_constraints(content_md: str) -> str:
 # ── Python 코드 스니펫 파싱 ───────────────────────────────────
 
 
-def parse_python_snippet(snippets: list[dict]) -> dict | None:
+def parse_python_snippet(snippets: list[dict]) -> Optional[dict]:
     """LeetCode Python3 코드 스니펫에서 메서드 정보 추출.
 
     Returns:
@@ -446,7 +447,7 @@ def generate_solution_file(
     slug: str,
     tags: str,
     difficulty: str,
-    method_info: dict | None,
+    method_info: Optional[dict],
 ) -> str:
     """solution.py 내용 생성."""
     func_name = slug.replace("-", "_")

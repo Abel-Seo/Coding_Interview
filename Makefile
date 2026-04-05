@@ -6,16 +6,16 @@
 # make status           → 오늘 진행 상황 확인
 
 status:
-	@python scripts/status.py
+	@python3 scripts/status.py
 
 new:
-	@python scripts/new_problem.py $(filter-out $@,$(MAKECMDGOALS))
+	@python3 scripts/new_problem.py $(filter-out $@,$(MAKECMDGOALS))
 
 test:
 ifdef n
-	@python -m pytest problems/LC$(shell printf '%04d' $(n))-* -v
+	@python3 -m pytest problems/LC$(shell printf '%04d' $(n))-* -v
 else
-	@python -m pytest -v
+	@python3 -m pytest -v
 endif
 
 # make new 217 에서 217을 타겟으로 인식하지 않게 처리
