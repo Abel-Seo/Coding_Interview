@@ -19,7 +19,7 @@
 | 1 | 217 | Contains Duplicate |🟢|
 | 2 | 242 | Valid Anagram |🟢|
 | 3 | 1 | Two Sum |🟡|
-| 4 | 49 | Group Anagrams | |
+| 4 | 49 | Group Anagrams |🟡|
 | 5 | 347 | Top K Frequent Elements | |
 | 6 | 238 | Product of Array Except Self | |
 | 7 | 36 | Valid Sudoku | |
